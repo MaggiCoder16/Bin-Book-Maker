@@ -20,7 +20,7 @@ jobs:
       run: |
         pip install chess requests
 
-    - name: Fetch games and build PGN
+    - name: Fetch games and build PGN (NOT NECESSARY, YOU CAN DELETE THIS STEP IF YOU WANT TO UPLOAD YOUR OWN PGN.
       run: python fetch_and_build.py
 
     - name: Create Polyglot book
