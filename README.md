@@ -13,6 +13,8 @@ PgnFile.PGN
 
 The script will read this file, process the games, and generate a `book.bin` as output. It supports both standard chess and Chess960, and filters games based on rating if needed.
 
+An `ARTIFACT` link will be uploaded in the workflow run, click it, and it will download in your pc.
+
 The PGN must include `[FEN]` and `[SetUp "1"]` tags for Chess960 positions to be correctly handled.
 
 The bookbuilder binary is expected to accept standard arguments for PGN input and BIN output.
