@@ -1,4 +1,3 @@
-
 import chess
 import chess.pgn
 import chess.polyglot
@@ -87,7 +86,13 @@ def build_book_file(pgn_path, book_path):
             if i % 100 == 0:
                 print(f"Processed {i} games")
             ligame = LichessGame(game)
-            board = game.board()
+
+            # Support Chess960 and standard chess
+            if game.headers.get("SetUp", "0") == "1" and "FEN" in game.headers:
+                board = chess.Board(fen=game.headers["FEN"])
+            else:
+                board = chess.Board()
+
             score = ligame.score()
             ply = 0
             for move in game.mainline_moves():
