@@ -10,7 +10,7 @@ BOTS = [
     "AttackKing_Bot"
 ]
 
-OUTPUT_PGN = "filtered_960_bots_2200plus.pgn"
+OUTPUT_PGN = "PgnFile.pgn"
 
 def is_valid_line(line):
     return line.startswith("[Event") or line.startswith("[Site") or line.startswith("[Date") or line.startswith("[Round") or line.startswith("[White") or line.startswith("[Black") or line.startswith("[Result") or line.startswith("[FEN") or line.startswith("[SetUp") or line.startswith("1.") or line == ""
