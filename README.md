@@ -1,7 +1,7 @@
 
 # PGN to BIN Book Converter
 
-THIS FETCH_AND_BUILD.PY MAKES A PGN FILE FOR GOOD BOTS' CHESS960 GAMES. JUST RUN A WORKFLOW, YOU WILL GET ARTIFACT LINK TO DOWNLOAD .BIN BOOK.
+THIS FETCH_AND_BUILD.PY MAKES A PGN FILE FOR GOOD BOTS' CHESS960 GAMES. JUST RUN A WORKFLOW, YOU WILL GET ARTIFACT LINK TO DOWNLOAD .BIN BOOK. YOU CAN MAKE YOUR OWN .PGN FILE AND NAME IT "PgnFile.pgn"
 
 This script takes a `.pgn` file containing chess games and converts it into a `.bin` Polyglot opening book, which can be used by engines and bots.
 
@@ -17,4 +17,4 @@ The bookbuilder binary is expected to accept standard arguments for PGN input an
 
 The generated `book.bin` can be used directly in engines that support Polyglot books.
 
-Feel free to contribute or suggest improvements.
+Feel free to contribute or suggest improvements. You are welcome to make pull requests!
